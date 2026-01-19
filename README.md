@@ -1,16 +1,28 @@
-# secure_wallet_flutter
+# Secure Wallet (Flutter)
 
-A new Flutter project.
+A Flutter application that simulates a wallet system, focusing on Clean Architecture, MVVM, and Dependency Injection.
+This project is designed to be backend-ready and cloud-integrated in later phases.
 
-## Getting Started
+## Project Goal
+- Practice Flutter with professional architecture
+- Apply Clean Architecture & MVVM
+- Prepare for backend and cloud integration
 
-This project is a starting point for a Flutter application.
+## Features (MVP)
+- Authentication (Login)
+- Wallet balance overview
+- Mock transactions (deposit / withdraw)
+- Transaction history with status
 
-A few resources to get you started if this is your first Flutter project:
+## Architecture
+- Clean Architecture (Presentation / Domain / Data)
+- MVVM for UI layer
+- Dependency Injection ready
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Tech Stack
+- Flutter
+- Riverpod (State management & DI)
+- Mock data (API-ready)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Status
+🚧 In progress – Initial setup
