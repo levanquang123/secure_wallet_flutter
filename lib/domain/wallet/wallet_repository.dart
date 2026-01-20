@@ -1,3 +1,3 @@
-class WalletRepository {
-
+abstract class WalletRepository {
+  Future<double> getBalance();
 }
