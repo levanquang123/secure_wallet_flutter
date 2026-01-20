@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:secure_wallet_flutter/domain/auth/auth_repository.dart';
 
+import '../../wallet/wallet_screen.dart';
 import 'login_view_model.dart';
 import 'login_state.dart';
 import '../../../domain/auth/login_useCase.dart';
@@ -45,7 +46,15 @@ class _LoginScreenState extends State<LoginScreen> {
     );
 
     viewModel.addListener(() {
-      setState(() {});
+      final state = viewModel.state;
+
+      if (state is LoginSuccess) {
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (_) => const WalletScreen()),
+        );
+      } else {
+        setState(() {});
+      }
     });
   }
 
